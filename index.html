@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리온넥서스</title>
+
+    <meta property="og:title" content="리온넥서스">
+    <meta property="og:description" content="Rion Nexus - Semiconductor Solution Partner">
+    <meta property="og:image" content="https://ohseungyun92.github.io/RionNexus/Rion-04.jpg">
+    <meta property="og:url" content="https://ohseungyun92.github.io/RionNexus/">
+    <meta property="og:type" content="website">
+
+    <style>
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            background-color: #000000; 
+            overflow-x: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100%; 
+            height: auto;
+            opacity: 0; 
+            transform: translateY(50px); 
+            animation: fadeInUp 1.5s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 순차적 애니메이션 지연 시간 */
+        .img1 { animation-delay: 0.3s; }
+        .img2 { animation-delay: 1.0s; }
+        .img3 { animation-delay: 1.7s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Rion-01.jpg" class="img1" alt="Rion Nexus 상단">
+        <img src="Rion-02.jpg" class="img2" alt="Rion Nexus 중단">
+        <img src="Rion-03.jpg" class="img3" alt="Rion Nexus 하단">
+    </div>
+</body>
+</html>
