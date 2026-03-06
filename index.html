@@ -7,11 +7,12 @@
 
     <meta property="og:title" content="리온넥서스">
     <meta property="og:description" content="Rion Nexus - Semiconductor Solution Partner">
-    <meta property="og:image" content="https://ohseungyun92.github.io/RionNexus/Rion-04.jpg">
-    <meta property="og:url" content="https://ohseungyun92.github.io/RionNexus/">
+    <meta property="og:image" content="https://ohseungyun92.github.io/Rionnexus/Rion-04.jpg">
+    <meta property="og:url" content="https://ohseungyun92.github.io/Rionnexus/">
     <meta property="og:type" content="website">
 
     <style>
+        /* 배경 및 기본 레이아웃 설정 */
         body, html { 
             margin: 0; 
             padding: 0; 
@@ -29,11 +30,12 @@
             width: 100%;
             max-width: 100%; 
             height: auto;
-            opacity: 0; 
-            transform: translateY(50px); 
+            opacity: 0; /* 애니메이션 시작 전 투명하게 */
+            transform: translateY(50px); /* 50px 아래에서 시작 */
             animation: fadeInUp 1.5s ease forwards;
         }
 
+        /* 아래에서 위로 부드럽게 올라오는 효과 */
         @keyframes fadeInUp {
             to {
                 opacity: 1;
@@ -41,7 +43,7 @@
             }
         }
 
-        /* 순차적 애니메이션 지연 시간 */
+        /* 0.7초 간격으로 순차적 실행 */
         .img1 { animation-delay: 0.3s; }
         .img2 { animation-delay: 1.0s; }
         .img3 { animation-delay: 1.7s; }
